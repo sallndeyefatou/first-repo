@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Quizz;
+use App\Models\Quizz1;
 use Illuminate\Http\Request;
 
 class quizzaccueilController extends Controller
@@ -28,7 +29,7 @@ class quizzaccueilController extends Controller
 
         ]);
 
-        $newquizz= Quizz::create($validated
+        $newquizz= Quizz1::create($validated
            /*'nomcampagne' => $request->nomcampagne,
             'nomquizz' => $request->nomquizz,
             'nbques' =>$request->nbques,

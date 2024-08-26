@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
@@ -76,7 +77,7 @@ class UserController extends Controller
                     'login'=>$request->prenom.' '.$request->nom,
                     'statut'=>0,
                     'accesslevel_id'=>1,
-                    'email'=>$request->nom.''.$request->prenom.'@pcci.sn',
+                    'email'=>Str::lower($request->nom.$request->prenom.'@pcci.sn'),
                     'password'=>Hash::make($request->password),
                 ]);
 

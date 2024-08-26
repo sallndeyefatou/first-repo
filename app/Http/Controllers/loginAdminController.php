@@ -21,14 +21,15 @@ class loginAdminController extends Controller
         ]);
 */
         $credentials=$request->only('identifiant','password','accesslevel_id');
-        //$admin=User::where('accesslevel_id','=','7');
+        $admin=User::where('accesslevel_id','=','7');
 
         try {
-            if((Auth::attempt($credentials))){
+            if (Auth::attempt($credentials)){
 
-            return redirect()->route('quizz-list')->with('success','Connexion reussie');
+            return redirect()->route('quizz-list')->with('success','Connexion reussie')/*->with([
+                'admin'=>$admin])*/;
             }
-            return back()->with(['error','Aucun admin trouvé avec cet identifiant et/ou ce mot de passe']);
+            return back()->withErrors(['identifiant'=>'Aucun admin trouvé avec cet identifiant et/ou ce mot de passe']);
 
         } 
         catch (\Throwable $e) {

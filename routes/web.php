@@ -226,7 +226,7 @@ Route::post('quizz',[Quizz1Controller::class,'destroy'])->name('quizz.destroy');
 
 Route::get('edit',[Quizz1Controller::class,'edit'])->name('quizz.edit');
 
-Route::get('show/{quizz1_id}',[Quizz1Controller::class,'show'])->name('quizz.show');
+Route::get('/show',[Quizz1Controller::class,'show'])->name('quizz.show');
 
 Route::get('/quizz-add-question',function(){
    return view('admin.quizz.questions.add');
@@ -234,7 +234,7 @@ Route::get('/quizz-add-question',function(){
 
 
 
-Route::get('/quizz-add-question/{quizz1_id}',[Quizz1Controller::class,'addquestion'])->name('quizz-add-question');
+Route::get('/quizz-add-question/{quizz1_id}/add-question',[Quizz1Controller::class,'addquestion'])->name('quizz-add-question');
 
 //Route::resource('quizzs',QuestionsController::class);
 

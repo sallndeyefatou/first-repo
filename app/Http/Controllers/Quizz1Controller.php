@@ -108,12 +108,15 @@ class Quizz1Controller extends Controller
 
 
 
-        public function show($quizz1_id)
+        public function show($id)
         {
-            
-        $quizz = Quizz1::find($quizz1_id)->first();
-        return view('admin.quizz.questions.show',compact('quizz'));
+        $quizz = Quizz1::findOrFail($id);
+        
+        return view('admin.quizz.questions.show')->with(['quizz'=>$quizz]);
+        
+        //dd($quizz);
         }
+        
 
 
         public function addquestion(Request $request, $quizz1_id)
@@ -121,6 +124,7 @@ class Quizz1Controller extends Controller
             //dd($request);
             $quizz = Quizz1::find($quizz1_id);
             //nombre de questions déja ajoutées
+            /*dd($quizz);*/
             $questionsCount = $quizz->questions->count();
             //nombre de questions restantes
             $questions_restantes = $quizz->nbques - $questionsCount;
@@ -135,7 +139,7 @@ class Quizz1Controller extends Controller
             try {
 
                 $question = Questions::create([
-                    'quizz1_id' => $quizz->id,
+                    'quizz1_id' => $quizz->quizz_id,
                     'intitule' => $request->intitule,
                     'type' => $request->type,
                     'note' =>$request->note
@@ -144,7 +148,7 @@ class Quizz1Controller extends Controller
                 if (in_array($request->type, ['choix_multiple', 'choix_unique'])) {
                     foreach ($request->reponses as $key => $reponse_text) {
                         $reponse = Reponse::create([
-                            'questions_id' => $question->id,
+                            'questions_id' => $question->quizz1_id,
                             'reponse' => $reponse_text,
                             'is_correct' => ($request->type == 'choix_unique' && $key == $request->bonne_reponse),
                         ]);

@@ -1,11 +1,11 @@
 @extends('layouts.master-lg')
 @section('head-top')
+<form action="{{route('quizz.show')}}" method="GET">
    <div class="row">
-    <form action="{{route('quizz.show',['quizz1_id'/*$quizz->id*/])}}" method="GET">
 		<div class="col-md-8 col-sm-12">
 			<div class="title">
 				<div class="visit">
-					<h6>QUIZZ : <span class="text-info">{{-- $quizz->nomquizz --}}</span></h6>
+					<h6>QUIZZ : <span class="text-info">{{$quizz->nomquizz}}</span></h6>
 				</div>
 				<div class="visit mt-2">
 				    <span class="font-weight-bold">Nombre de questions :</span> 
@@ -16,13 +16,14 @@
 		<div class="col-md-4 col-sm-12 mt-2 text-right">
 			<div class="title">
 				<div class="visit">
-				    <span class="font-weight-bold">Durée :</span> 
+				    <span class="font-weight-bold">Durée : </span> 
                     <span class="badge badge-pill badge-info">{{-- $quizz->duree --}} minutes</span>	
 				</div>				
 			</div>
 		</div>
   </div>
 @endsection
+
 
 
 @section('content')
@@ -51,10 +52,10 @@
 				</div>
 			</div>
 		</div>
-    </form>
+    
 	</div>
 @endsection
-
+<form>
 @section('script')
 	<script>
 		// Ajouter des scripts JavaScript si nécessaire
