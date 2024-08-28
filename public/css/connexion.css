@@ -1,0 +1,70 @@
+body{
+    height: 100%;
+    background:url('https://images.pexels.com/photos/13627288/pexels-photo-13627288.jpeg') no-repeat center fixed;
+    background-size: cover;
+
+    
+}
+
+.colonne{
+    padding:30px ,100px;
+}
+.row.align-items-center{
+    padding: 25px 220px;
+}
+form{
+    margin-top: 80px;
+    align-items: center;
+    padding: 35px 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    background-color: inherit
+}
+form > h2{
+    font:55px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.btn.btn-primary{
+    background-color: rgba(8, 105, 216, 0.808);
+    border-color: rgba(8, 105, 216, 0.808);;
+    color: white;
+    size: 14px 14px;
+}
+.form-group{
+    padding: 17px 20px;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.form-group > label{
+    text-align: left;
+    font-size: 20px;
+    justify-content: left;
+    color: grey;
+}
+.noaccount{
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+
+}
+form > p{
+    font-size: 20px;
+    color: white;
+}
+.nav-item > .nav-link{
+    color:rgba(20, 77, 124, 0.664);;
+}
+p> a{
+    color:rgba(8, 105, 216, 0.808);;
+    font-size: 20px;
+    text-decoration: none;
+}

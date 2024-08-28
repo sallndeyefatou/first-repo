@@ -1,0 +1,30 @@
+body{
+    height: 100%;
+    background:url('https://images.pexels.com/photos/13627288/pexels-photo-13627288.jpeg') no-repeat center fixed;
+    background-size: cover;   
+}
+
+.results.h2 { 
+    margin-top: 200px;
+    font: 30px;
+    position: relative;
+    color: aliceblue;
+}
+ul.list-group{
+    border: 2px solid navy;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    padding: 30px 30px;
+}
+li.list-group-items{
+    border-color: blue;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px;
+}
+.nav-item > .nav-link{
+    color:rgba(20, 77, 124, 0.664);;
+}

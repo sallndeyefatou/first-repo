@@ -1,0 +1,62 @@
+body {
+   
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background:url('https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg') no-repeat center fixed;
+    background-size: cover;
+
+}
+.container-fluid{
+background-color: whitesmoke;
+}
+
+
+.navbar-toggler{
+position: relative;
+}
+a .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.collapse >.navbar-collapse{
+position: relative;
+}
+.nav-item > .nav-link{
+    color:rgba(20, 77, 124, 0.664);
+}
+.nav-item > .nav-link:hover{
+    transition: black 0.9s ease;
+}
+.bienvenue > button{
+    margin-top: 30px;
+}
+.bienvenue >h1{
+    font-size: 50px;
+    color: white;
+    position: relative;
+    margin-top: 230px;
+    justify-content: center;
+    align-items: center;
+  
+}
+form{
+    margin-top: 23px;
+}
+.btn.btn-primary > a{
+    text-decoration: none;
+    color: white;
+}
+.shadow{
+    
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(15, 15, 112, 0.356);
+    
+}
+.shadow > p{
+    color: whitesmoke;
+    text-align: left;
+
+}

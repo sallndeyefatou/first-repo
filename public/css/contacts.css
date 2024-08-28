@@ -1,0 +1,86 @@
+body {
+   
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background:url('https://images.pexels.com/photos/1474993/pexels-photo-1474993.jpeg') no-repeat center fixed;
+    background-size: cover;
+
+}
+.container-fluid{
+    background-color: whitesmoke;
+    }
+    
+    
+.navbar-toggler{
+    position: relative;
+    }
+a .nav-link {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+.collapse >.navbar-collapse{
+    position: relative;
+    }
+.nav-item > .nav-link{
+        color:rgba(20, 77, 124, 0.664);
+    }
+.nav-item > .nav-link:hover{
+        transition: black 0.9s ease;
+    }
+.row.card.text-white{
+    padding:60px 40px;
+}
+.container{
+    justify-content: center;
+    margin-top: 100px;
+    padding: 60px 40px;
+    
+    
+}
+h4.card-header{
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    font: 25px;
+}
+
+div.row.card{
+    background: inherit;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 25px 250px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.card-body > p{
+    color: whitesmoke;
+    font-size: 18px;
+
+}
+input.form-control{
+    background-color: inherit
+    ;
+}
+textarea.form-control{
+    background-color: inherit;
+    
+}
+div.mb-3{
+    background-color: mintcream;
+    border: midnightblue 1px solid;
+    border-radius: 4px;
+
+}
+div.mb-4{
+    background-color: mintcream;
+    border: midnightblue 1px solid;
+    border-radius: 4px;
+
+}
+
+.card-body{
+    position: relative;
+    padding: 30px 30px;
+}

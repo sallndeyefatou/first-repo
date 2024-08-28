@@ -1,0 +1,65 @@
+body {
+   
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background:url('//images.pexels.com/photos/585418/pexels-photo-585418.jpeg') no-repeat center fixed;
+    background-size: cover;
+
+}
+.container-fluid{
+background-color: whitesmoke;
+}
+
+
+.navbar-toggler{
+position: relative;
+}
+a .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.collapse >.navbar-collapse{
+position: relative;
+}
+.nav-item > .nav-link{
+    color:rgba(20, 77, 124, 0.664);;
+}
+.nav-item > .nav-link:hover{
+    transition: black 0.9s ease;
+}
+
+.d-grid {
+position:relative;
+align-content: center;
+margin-top: 300px;
+
+
+
+
+}
+.d-grid > .btn-primary{
+
+background-color: inherit;
+position: relative;
+border-color: white;
+transition: inherit 0.9s ease;
+padding: 12px 25px;
+
+
+}
+.d-grid > .btn-primary >a{
+
+font:white;
+color: white;
+text-decoration: none;
+
+
+}
+.d-grid > .btn-primary:hover{
+background-color: rgba(20, 77, 124, 0.664);
+border-color: rgba(20, 77, 124, 0.664);
+}
+.btn.btn-secondary{
+    position: relative;
+}
