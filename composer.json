@@ -1,6 +1,7 @@
 {
     "name": "laravel/laravel",
     "type": "project",
+<<<<<<< HEAD
     "description": "The skeleton application for the Laravel framework.",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
@@ -17,6 +18,27 @@
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.0",
         "phpunit/phpunit": "^11.0.1"
+=======
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.75",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.4"
+    },
+    "require-dev": {
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
+>>>>>>> e91f59c283c6219770903b857baa0eadd074c946
     },
     "autoload": {
         "psr-4": {
@@ -33,8 +55,12 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+<<<<<<< HEAD
             "@php artisan package:discover --ansi",
             "@php artisan filament:upgrade"
+=======
+            "@php artisan package:discover --ansi"
+>>>>>>> e91f59c283c6219770903b857baa0eadd074c946
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
@@ -43,9 +69,13 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
+<<<<<<< HEAD
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
             "@php artisan migrate --graceful --ansi"
+=======
+            "@php artisan key:generate --ansi"
+>>>>>>> e91f59c283c6219770903b857baa0eadd074c946
         ]
     },
     "extra": {
@@ -56,6 +86,7 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
+<<<<<<< HEAD
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
@@ -63,5 +94,10 @@
         }
     },
     "minimum-stability": "stable",
+=======
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+>>>>>>> e91f59c283c6219770903b857baa0eadd074c946
     "prefer-stable": true
 }
