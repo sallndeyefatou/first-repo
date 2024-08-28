@@ -118,7 +118,6 @@ class Quizz1Controller extends Controller
         }
         
 
-
         public function addquestion(Request $request, $quizz1_id)
         {
             //dd($request);

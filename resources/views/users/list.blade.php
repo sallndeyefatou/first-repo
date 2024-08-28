@@ -176,9 +176,13 @@
                                                         <a href="{{--route('editUser')--}}" data-color="#265ed7"
                                                             ><i class="icon-copy dw dw-edit2"></i
                                                         ></a>
-                                                        <a href="{{--route('user.destroy')--}}" data-color="#e95959"
+														<form action="{{route('user.destroy',$user->id)}}" method="GET">
+                                                        <a href="{{--route('user.destroy',$user->id)--}}" data-color="#e95959"
                                                             ><i class="icon-copy dw dw-delete-3"></i
                                                         ></a>
+
+														<!--button type="submit" class="btn btn-danger" onclick="return confirm(Etes-vous sur de vouloir supprimer cet utilisateur?);">Supprimer</button-->
+													</form>
                                                     </div>
                                                 </td>	
                                             </tr>

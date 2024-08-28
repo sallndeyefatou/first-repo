@@ -213,10 +213,15 @@
 																<a href="{{route('quizz.edit')}}" data-color="#265ed7"
 																	><i class="icon-copy dw dw-edit2"></i
 																></a>
-																<form action="{{route('quizz.destroy'/*[id]*/)}}" method="POST">
-																<a href="{{--route('quizz.destroy',['quizz1_id'])--}}" data-color="#e95959"
+																
+																<form action="{{route('quizz.destroy',$quizz->id)}}" method='DELETE'>
+																<a href="{{-- route('quizz.destroy', $quizz->id) ---}}" data-color="#e95959"
 																	><i class="icon-copy dw dw-delete-3"></i
 																></a>
+																<!--button class="btn-danger" onclick="Etes-vous sur de vouloir supprimer ce quizz?">
+																	X
+
+																</button-->
 															</form>
 															</div>
 														</td>	

@@ -123,7 +123,7 @@ class UserController extends Controller
     public function edit($id)
     {
 
-        $user=User::whereId($id)->first();
+        $user=User::where($id)->first();
 
         if(!$user)
         {
@@ -200,7 +200,7 @@ class UserController extends Controller
         try {
 
 
-            $delete_user=User::whereId($id)->delete();
+            $delete_user=User::where($id)->delete();
             if(!$delete_user){
 
               return back()->with('error','Erreur lors de la suppression user.');

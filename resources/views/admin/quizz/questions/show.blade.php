@@ -5,7 +5,7 @@
 		<div class="col-md-8 col-sm-12">
 			<div class="title">
 				<div class="visit">
-					<h6>QUIZZ : <span class="text-info">{{$quizz->nomquizz}}</span></h6>
+					<h6>QUIZZ : <span class="text-info">{{--$quizz->nomquizz--}}</span></h6>
 				</div>
 				<div class="visit mt-2">
 				    <span class="font-weight-bold">Nombre de questions :</span> 

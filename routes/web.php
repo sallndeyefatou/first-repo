@@ -202,7 +202,7 @@ Route::post('store',[UserController::class,'store'])->name('users.store');
 
 Route::get('listUser',[UserController::class,'index'])->name('listUser');
 
-//Route::post('/users/{id}',[UserController::class,'destroy'])->name('user.destroy');
+Route::delete('/users/{id}',[UserController::class,'destroy'])->name('user.destroy');
 
 Route::get('edit',[UserController::class,'edit'])->name('editUser');
 
@@ -222,7 +222,7 @@ Route::get('quizz-accueil',[Quizz1Controller::class,'index'])->name('quizz-list'
 
 Route::get('create',[Quizz1Controller::class,'create'])->name('quizz.create');
 
-Route::post('quizz',[Quizz1Controller::class,'destroy'])->name('quizz.destroy');
+Route::delete('quizz',[Quizz1Controller::class,'destroy'])->name('quizz.destroy');
 
 Route::get('edit',[Quizz1Controller::class,'edit'])->name('quizz.edit');
 

@@ -27,7 +27,7 @@
 
 			<div class="card-box mb-0">
 				<div class="pb-0">
-					<form method="POST" action="{{route('quizz-add-question',[$quizz->quizz_id])}}" >
+					<form method="POST" action="{{--route('quizz-add-question',[$quizz->quizz_id])--}}" >
 						@csrf
 						<div class="form-group">
 							<select class="form-control">
